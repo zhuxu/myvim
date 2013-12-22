@@ -30,7 +30,7 @@ Bundle 'altercation/vim-colors-solarized'
 " C Programming 
 Bundle 'c.vim'
 Bundle 'Raimondi/delimitMate'
-Bundle 'vim-scripts/a.vim'
+"Bundle 'vim-scripts/a.vim'
 
 filetype plugin indent on 		"requried for vundle
 
@@ -39,19 +39,28 @@ set helplang=cn
 set encoding=utf-8
 syntax enable
 syntax on
-set backspace=indent,eol,start
 set history=500
+"设置退格符
+set backspace=indent,eol,start
+"设置tab等
 set ts=4
 set sw=4
 set sts=4
+"设置对齐
+set ci
+"设置折叠
+set foldmethod=indent
 
+"设置状态栏
 set laststatus=2
-set statusline=%F:\%l
+set statusline=%F:\%l:\%P
 
+"设置tagbar插件
 let g:tagbar_width = 22
 let g:tagbar_left = 0
 map <F8> :Tagbar<cr>
 
+"设置vi背景
 if has('gui_running')
 	set background=light
 else
@@ -62,6 +71,7 @@ set t_Co=16
 let g:solarized_termcolors=16
 colorscheme solarized
 
+"设置NERDTree
 let g:NERDTreeWinSize=22
 map <F12> :NERDTree<CR>
 
