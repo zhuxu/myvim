@@ -32,6 +32,9 @@ Bundle 'c.vim'
 Bundle 'Raimondi/delimitMate'
 "Bundle 'vim-scripts/a.vim'
 
+"Latex plugin
+Bundle 'https://github.com/jcf/vim-latex.git'
+
 filetype plugin indent on 		"requried for vundle
 
 " basic settings
